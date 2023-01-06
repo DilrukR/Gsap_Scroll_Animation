@@ -14,6 +14,7 @@ const Ciecles = () => {
   const cirFive = useRef(null);
   const cirSix = useRef(null);
   const Container = useRef(null);
+  const Card = useRef(null);
 
   useEffect(() => {
     const el = cirOne.current;
@@ -23,12 +24,15 @@ const Ciecles = () => {
     const el5 = cirFive.current;
     const el6 = cirSix.current;
     const cont = Container.current;
+    const card = Card.current;
+
+    // Animation For cards
 
     gsap.to(cont, {
       // rotation: 360,
-      scale: 1.2,
+      scale: 1.5,
 
-      translateX: -200,
+      translateX: -400,
       // transformOrigin: "center",
 
       scrollTrigger: {
@@ -36,17 +40,17 @@ const Ciecles = () => {
         toggleActions: "restart pause resume complete",
         markers: true,
         start: "top -10%",
-        end: "top -1000%",
-        pinned: true,
+        end: "top -50%",
 
-        scrub: true,
+        scrub: 1,
       },
     });
 
     gsap.to(el, {
       opacity: 1,
-      y: 250,
+      y: 285,
       x: 220,
+      duration: 2,
 
       scrollTrigger: {
         trigger: "#trig",
@@ -55,12 +59,12 @@ const Ciecles = () => {
         start: "bottom 0%",
         end: "top -10%",
 
-        scrub: true,
+        scrub: 1,
       },
     });
     gsap.to(el2, {
       opacity: 1,
-      y: 250,
+      y: 285,
       x: -220,
       duration: 2,
       scrollTrigger: {
@@ -69,12 +73,12 @@ const Ciecles = () => {
         markers: true,
         start: "bottom 0%",
         end: "top -10%",
-        scrub: true,
+        scrub: 1,
       },
     });
 
     gsap.to(el3, {
-      x: 490,
+      x: 485,
 
       scrollTrigger: {
         trigger: "#trig",
@@ -82,12 +86,12 @@ const Ciecles = () => {
         markers: true,
         start: "bottom 0%",
         end: "top -10%",
-        scrub: true,
+        scrub: 1,
       },
     });
 
     gsap.to(el4, {
-      x: -490,
+      x: -485,
       duration: 2,
       scrollTrigger: {
         trigger: "#trig",
@@ -95,12 +99,12 @@ const Ciecles = () => {
         markers: true,
         start: "bottom 0%",
         end: "top -10%",
-        scrub: true,
+        scrub: 1,
       },
     });
     gsap.to(el5, {
       opacity: 1,
-      y: -310,
+      y: -345,
       x: 220,
       duration: 2,
       scrollTrigger: {
@@ -109,12 +113,12 @@ const Ciecles = () => {
         markers: true,
         start: "bottom 0%",
         end: "top -10%",
-        scrub: true,
+        scrub: 1,
       },
     });
     gsap.to(el6, {
       opacity: 1,
-      y: -310,
+      y: -345,
       x: -220,
       duration: 2,
       scrollTrigger: {
@@ -123,7 +127,7 @@ const Ciecles = () => {
         markers: true,
         start: "bottom 0%",
         end: "top -10%",
-        scrub: true,
+        scrub: 1,
       },
     });
   }, []);
@@ -192,6 +196,21 @@ const Ciecles = () => {
               fill='transparent'
             />
           </svg>
+        </div>
+      </div>
+
+      <div className='card-container'>
+        <div className='cards' ref={Card}>
+          <div className='space'></div>
+        </div>
+        <div className='cards'>
+          <div className='space'></div>
+        </div>
+        <div className='cards'>
+          <div className='space'></div>
+        </div>
+        <div className='cards'>
+          <div className='space'></div>
         </div>
       </div>
     </div>

@@ -1,10 +1,17 @@
 .c_con {
-  height: 1000vh;
+  height: 500vh;
+  background-color: #0a0a0a;
+}
+
+.about {
+  height: 500vh;
+  position: relative;
 }
 
 .circle_container {
   width: 1440px;
-  height: 100vh;
+  // background-color: aqua;
+  height: 800px;
   margin: 0 auto;
 
   overflow: hidden;
@@ -15,12 +22,12 @@
 
   .circle {
     width: auto;
-    transform: rotate(30);
   }
 
   .c1 {
     position: absolute;
     left: 30%;
+    top: 0;
     opacity: 0;
   }
 
@@ -56,4 +63,27 @@
     bottom: 0;
     opacity: 0;
   }
+}
+
+.card-container {
+  padding: 700px 100px;
+  float: right;
+}
+
+.cards {
+  width: 600px;
+
+  height: 500px;
+  background-color: #1e1e1e;
+  position: sticky;
+  top: 30%;
+  right: 0;
+  border-radius: 50px;
+  bottom: 10%;
+}
+
+.cards:nth-child(0) {
+  width: 600px;
+  background-color: black;
+  height: 500px;
 }
