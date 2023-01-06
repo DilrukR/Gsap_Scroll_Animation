@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Circles from "./circles/ciecles.jsx";
+import Before from "./Components/Before/Before.jsx";
+// import After from "./Components/After/After.jsx";
+import Gone from "./Components/Gone/Gone.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Before />
+      <Circles />
+
+      <Gone />
     </div>
   );
 }
