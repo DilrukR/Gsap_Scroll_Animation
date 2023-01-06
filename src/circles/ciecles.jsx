@@ -78,6 +78,7 @@ const Ciecles = () => {
     });
 
     gsap.to(el3, {
+      opacity: 1,
       x: 485,
 
       scrollTrigger: {
@@ -91,6 +92,7 @@ const Ciecles = () => {
     });
 
     gsap.to(el4, {
+      opacity: 1,
       x: -485,
       duration: 2,
       scrollTrigger: {
