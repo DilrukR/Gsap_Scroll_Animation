@@ -29,17 +29,29 @@ const Ciecles = () => {
     // Animation For cards
 
     gsap.to(cont, {
-      rotation: 360,
       scale: 1.5,
 
       translateX: -400,
-      transformOrigin: "49% 47%",
 
       scrollTrigger: {
         trigger: "#trig",
         toggleActions: "restart pause resume complete",
         markers: true,
         start: "top -20%",
+        end: "top -40%",
+
+        scrub: 1,
+      },
+    });
+    gsap.to(cont, {
+      rotation: 360,
+      transformOrigin: "49.7% 46.7%",
+
+      scrollTrigger: {
+        trigger: "#trig",
+        toggleActions: "restart pause resume complete",
+        markers: true,
+        start: "top -50%",
         end: "top -500%",
 
         scrub: 1,
