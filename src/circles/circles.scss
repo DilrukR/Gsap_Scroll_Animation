@@ -77,68 +77,43 @@
   bottom: 10%;
   height: 600px;
   overflow-y: hidden;
+  margin-bottom: 200px;
+
+  .cards {
+    width: 500px;
+    opacity: 0;
+    height: 600px;
+    position: absolute;
+    text-align: center;
+    padding: 50px 20px;
+  }
 
   .card1 {
-    background-color: #3495ef;
-    position: absolute;
+    background-color: hsl(209, 85%, 57%);
     top: 100%;
-    width: 600px;
-    height: 600px;
-    opacity: 0;
-    z-index: 1;
-    border-radius: 50px;
   }
 
   .card2 {
     background-color: #33b858;
-    position: absolute;
-    top: 200%;
-    width: 600px;
-    opacity: 0;
-    height: 600px;
 
-    border-radius: 50px;
+    top: 200%;
   }
   .card3 {
     background-color: #f68909;
-    position: absolute;
     top: 300%;
-    width: 600px;
-    opacity: 0;
-    height: 600px;
-
-    border-radius: 50px;
   }
 
   .card4 {
     background-color: #ff84b7;
-    position: absolute;
     top: 400%;
-    width: 600px;
-    opacity: 0;
-    height: 600px;
-
-    border-radius: 50px;
   }
 
   .card5 {
-    background-color: #8077eb;
-    position: absolute;
-    top: 300%;
-    width: 600px;
-    opacity: 0;
-    height: 600px;
-
-    border-radius: 50px;
+    background-color: #c709f6;
+    top: 500%;
   }
   .card6 {
-    background-color: #ff84b7;
-    position: absolute;
-    top: 300%;
-    width: 600px;
-    opacity: 0;
-    height: 600px;
-
-    border-radius: 50px;
+    background-color: #8077eb;
+    top: 600%;
   }
 }

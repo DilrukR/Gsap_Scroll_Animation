@@ -64,7 +64,7 @@ const Ciecles = () => {
         toggleActions: "restart pause resume complete",
         markers: true,
         start: "top -50%",
-        end: "top -500%",
+        end: "top -700%",
 
         scrub: 2,
       },
@@ -168,8 +168,8 @@ const Ciecles = () => {
         trigger: "#trig",
         toggleActions: "restart pause resume complete",
         markers: true,
-        start: "top -100%",
-        end: "top -130%",
+        start: "top -90%",
+        end: "top -120%",
         scrub: 0.5,
         stagger: 1,
       },
@@ -185,7 +185,7 @@ const Ciecles = () => {
         toggleActions: "restart pause resume complete",
         markers: true,
         start: "top -140%",
-        end: "top -160%",
+        end: "top -170%",
         scrub: 0.5,
         stagger: 1,
       },
@@ -201,8 +201,8 @@ const Ciecles = () => {
         trigger: "#trig",
         toggleActions: "restart pause resume complete",
         markers: true,
-        start: "top -170%",
-        end: "top -190%",
+        start: "top -190%",
+        end: "top -220%",
         scrub: 0.5,
         stagger: 1,
       },
@@ -218,10 +218,43 @@ const Ciecles = () => {
         trigger: "#trig",
         toggleActions: "restart pause resume complete",
         markers: true,
-        start: "top -200%",
-        end: "top -220%",
+        start: "top -240%",
+        end: "top -270%",
         scrub: 0.5,
         stagger: 1,
+      },
+    });
+
+    gsap.to(card5, {
+      top: 0,
+      zIndex: 299,
+      opacity: 1,
+      stagger: 1,
+
+      scrollTrigger: {
+        trigger: "#trig",
+        toggleActions: "restart pause resume complete",
+        markers: true,
+        start: "top -300%",
+        end: "top -330%",
+        scrub: 0.5,
+        stagger: 1,
+      },
+    });
+
+    gsap.to(card6, {
+      top: 0,
+      zIndex: 399,
+      opacity: 1,
+      stagger: 1,
+
+      scrollTrigger: {
+        trigger: "#trig",
+        toggleActions: "restart pause resume complete",
+        markers: true,
+        start: "top -360%",
+        end: "top -390%",
+        scrub: 0.5,
       },
     });
   }, []);
@@ -294,22 +327,52 @@ const Ciecles = () => {
       </div>
 
       <div className='card-container' id='cardtrig'>
-        <div className=' card1' ref={Card1ref}>
-          <div className='space'></div>
+        <div className=' card1  cards' ref={Card1ref}>
+          <h1>Discovery & analysis</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            doloribus facere accusantium enim ab voluptatibus adipisci,
+            distinctio placeat consectetur optio porro maxime voluptatem
+            delectus et ad beatae nemo sint quibusdam.
+          </p>
         </div>
-        <div className='card2' ref={Card2ref}>
-          <div className='space'></div>
+        <div className='card2 cards' ref={Card2ref}>
+          <h1>UI/UX Design</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            doloribus facere accusantium enim ab voluptatibus adipisci,
+            distinctio placeat consectetur optio porro maxime voluptatem
+            delectus et ad beatae nemo sint quibusdam.
+          </p>
         </div>
-        <div className=' card3' ref={Card3ref}>
-          <div className='space'></div>
+        <div className=' card3 cards' ref={Card3ref}>
+          <h1>Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            doloribus facere accusantium enim ab voluptatibus adipisci,
+            distinctio placeat consectetur optio porro maxime voluptatem
+            delectus et ad beatae nemo sint quibusdam.
+          </p>
         </div>
-        <div className='card4' ref={Card4ref}>
-          <div className='space'></div>
+        <div className='card4 cards' ref={Card4ref}>
+          <h1>Release</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            doloribus facere accusantium enim ab voluptatibus adipisci,
+            distinctio placeat consectetur optio porro maxime voluptatem
+            delectus et ad beatae nemo sint quibusdam.
+          </p>
         </div>
-        <div className='cards'>
-          <div className='space'></div>
+        <div className='card5 cards' ref={Card5ref}>
+          <h1>Maintenance</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            doloribus facere accusantium enim ab voluptatibus adipisci,
+            distinctio placeat consectetur optio porro maxime voluptatem
+            delectus et ad beatae nemo sint quibusdam.
+          </p>
         </div>
-        <div className='cards'>
+        <div className='card6 cards' ref={Card6ref}>
           <div className='space'></div>
         </div>
       </div>
