@@ -176,7 +176,7 @@ const Ciecles = () => {
     });
 
     gsap.to(card2, {
-      top: 0,
+      top: "20%",
       zIndex: 9,
       opacity: 1,
 
@@ -192,7 +192,7 @@ const Ciecles = () => {
     });
 
     gsap.to(card3, {
-      top: 0,
+      top: "40%",
       zIndex: 99,
       opacity: 1,
       stagger: 1,
@@ -209,7 +209,7 @@ const Ciecles = () => {
     });
 
     gsap.to(card4, {
-      top: 0,
+      top: "60%",
       zIndex: 199,
       opacity: 1,
       stagger: 1,
@@ -226,7 +226,7 @@ const Ciecles = () => {
     });
 
     gsap.to(card5, {
-      top: 0,
+      top: "80%",
       zIndex: 299,
       opacity: 1,
       stagger: 1,
