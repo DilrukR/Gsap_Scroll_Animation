@@ -66,7 +66,7 @@ const Ciecles = () => {
         start: "top -50%",
         end: "top -500%",
 
-        scrub: 1,
+        scrub: 2,
       },
     });
 
@@ -168,9 +168,9 @@ const Ciecles = () => {
         trigger: "#trig",
         toggleActions: "restart pause resume complete",
         markers: true,
-        start: "top -90%",
-        end: "top -100%",
-        scrub: 1,
+        start: "top -100%",
+        end: "top -130%",
+        scrub: 0.5,
         stagger: 1,
       },
     });
@@ -184,16 +184,16 @@ const Ciecles = () => {
         trigger: "#trig",
         toggleActions: "restart pause resume complete",
         markers: true,
-        start: "top -100%",
-        end: "top -110%",
-        scrub: 1,
+        start: "top -140%",
+        end: "top -160%",
+        scrub: 0.5,
         stagger: 1,
       },
     });
 
     gsap.to(card3, {
       top: 0,
-      zIndex: 9,
+      zIndex: 99,
       opacity: 1,
       stagger: 1,
 
@@ -201,16 +201,16 @@ const Ciecles = () => {
         trigger: "#trig",
         toggleActions: "restart pause resume complete",
         markers: true,
-        start: "top -130%",
-        end: "top -140%",
-        scrub: 1,
+        start: "top -170%",
+        end: "top -190%",
+        scrub: 0.5,
         stagger: 1,
       },
     });
 
     gsap.to(card4, {
       top: 0,
-      zIndex: 9,
+      zIndex: 199,
       opacity: 1,
       stagger: 1,
 
@@ -218,9 +218,9 @@ const Ciecles = () => {
         trigger: "#trig",
         toggleActions: "restart pause resume complete",
         markers: true,
-        start: "top -150%",
-        end: "top -160%",
-        scrub: 1,
+        start: "top -200%",
+        end: "top -220%",
+        scrub: 0.5,
         stagger: 1,
       },
     });
@@ -300,10 +300,10 @@ const Ciecles = () => {
         <div className='card2' ref={Card2ref}>
           <div className='space'></div>
         </div>
-        <div className='cards card3' ref={Card3ref}>
+        <div className=' card3' ref={Card3ref}>
           <div className='space'></div>
         </div>
-        <div className='cards'>
+        <div className='card4' ref={Card4ref}>
           <div className='space'></div>
         </div>
         <div className='cards'>
