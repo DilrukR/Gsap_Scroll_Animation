@@ -1,5 +1,5 @@
 .c_con {
-  height: 500vh;
+  height: 700vh;
   background-color: #0a0a0a;
 }
 
@@ -68,24 +68,45 @@
 }
 
 .card-container {
-  padding: 700px 100px;
+  width: 600px;
   float: right;
-}
-
-.cards {
-  width: 600px;
-
-  height: 500px;
-  background-color: #1e1e1e;
   position: sticky;
-  top: 30%;
-  right: 0;
-  border-radius: 50px;
+  top: 10%;
+  right: 5%;
+  overflow-y: hidden;
   bottom: 10%;
-}
+  height: 600px;
+  overflow-y: hidden;
 
-.cards:nth-child(0) {
-  width: 600px;
-  background-color: black;
-  height: 500px;
+  .card1 {
+    background-color: #3495ef;
+    position: absolute;
+    top: 100%;
+    width: 600px;
+    height: 600px;
+    opacity: 0;
+    z-index: 1;
+    border-radius: 50px;
+  }
+
+  .card2 {
+    background-color: #33b858;
+    position: absolute;
+    top: 200%;
+    width: 600px;
+    opacity: 0;
+    height: 600px;
+
+    border-radius: 50px;
+  }
+  .card3 {
+    background-color: #f68909;
+    position: absolute;
+    top: 300%;
+    width: 600px;
+    opacity: 0;
+    height: 600px;
+
+    border-radius: 50px;
+  }
 }
