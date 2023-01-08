@@ -372,9 +372,6 @@ const Ciecles = () => {
             delectus et ad beatae nemo sint quibusdam.
           </p>
         </div>
-        <div className='card6 cards' ref={Card6ref}>
-          <div className='space'></div>
-        </div>
       </div>
     </div>
   );
