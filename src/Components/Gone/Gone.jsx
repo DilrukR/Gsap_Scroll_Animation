@@ -18,6 +18,7 @@ const Gone = () => {
   const Img8Ref = useRef(null);
   const Img9Ref = useRef(null);
   const Img10Ref = useRef(null);
+  const Text11Ref = useRef(null);
 
   useEffect(() => {
     const el1 = Img1Ref.current;
@@ -30,6 +31,7 @@ const Gone = () => {
     const el8 = Img8Ref.current;
     const el9 = Img9Ref.current;
     const el10 = Img10Ref.current;
+    const el11 = Text11Ref.current;
 
     gsap.to(el1, {
       scale: 0.1,
@@ -53,10 +55,13 @@ const Gone = () => {
           <h5>The essence of your business</h5>
         </div>
         <div className='text_container2'>
-          <h1>We make it</h1>
-          <h1>Outstanding</h1>
+          <div className='topic'>
+            <h1>We make it</h1>
+          </div>
+          <div className='color'>
+            <h1 className='.text'>Outstanding</h1>
+          </div>
         </div>
-        .
       </div>
     </div>
   );
